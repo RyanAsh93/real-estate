@@ -14,7 +14,7 @@ export default function Available() {
       const properties = data.filter((d) => d.email == agentEmail);
       const { first_name, last_name, email } = properties[0];
 
-      const aProperties = properties.map((p) => {
+      const aProperties = properties.map((p) => { 
         const { id, price, sold, beds, baths, sq_ft, city, zip, street } = p;
         return { id, price, sold, beds, baths, sq_ft, city, zip, street };
       });
